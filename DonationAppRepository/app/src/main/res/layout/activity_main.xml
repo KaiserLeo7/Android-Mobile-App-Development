@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AliceBlue"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/sharing_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.40" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/payment_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="169dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/checkboxes_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.70" />
+
+    <TextView
+        android:id="@+id/titleID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/donation_app_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="40sp"></TextView>
+
+
+    <TextView
+        android:id="@+id/paymentMethodID"
+        android:layout_width="288dp"
+        android:layout_height="31dp"
+        android:text="Payment Method: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/checkboxes_guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/payment_guideline">
+
+    </TextView>
+
+    <RadioGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/checkboxes_guideline"
+        app:layout_constraintTop_toTopOf="@+id/payment_guideline">
+
+        <RadioButton
+            android:id="@+id/paypal_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PayPal">
+
+        </RadioButton>
+
+        <RadioButton
+            android:id="@+id/credit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Credit Card">
+
+        </RadioButton>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/howToShareID"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="How Would you like to share this:"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/checkboxes_guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sharing_guideline">
+
+    </TextView>
+
+    <CheckBox
+        android:id="@+id/wup_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:text="@string/WhatsUp"
+        app:layout_constraintTop_toTopOf="@+id/sharing_guideline"
+        app:layout_constraintBottom_toTopOf="@+id/messages_check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/checkboxes_guideline"
+        app:layout_constraintVertical_chainStyle="packed"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/messenger_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/messanger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.951"
+        app:layout_constraintStart_toStartOf="@+id/checkboxes_guideline"
+        app:layout_constraintTop_toBottomOf="@id/messages_check"
+        app:layout_constraintVertical_chainStyle="packed"></CheckBox>
+
+    <CheckBox
+        android:id="@+id/messages_check"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/text_message"
+        app:layout_constraintBottom_toTopOf="@+id/messenger_check"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.972"
+        app:layout_constraintStart_toStartOf="@+id/checkboxes_guideline"
+        app:layout_constraintTop_toBottomOf="@id/wup_check"
+        app:layout_constraintVertical_chainStyle="packed">
+
+    </CheckBox>
+
+    <TextView
+        android:id="@+id/donateTextID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How much would you like to donate?"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/amount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.058"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/howToShareID"
+        app:layout_constraintVertical_bias="0.831">
+
+    </TextView>
+
+    <EditText
+
+        android:id="@+id/amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:inputType="number"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/donate_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/donate_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@color/IndianRed"
+        android:text="Donate Now"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

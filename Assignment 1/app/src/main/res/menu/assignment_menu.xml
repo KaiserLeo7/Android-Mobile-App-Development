@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_item0"
+        android:title="@string/Lang"
+        app:showAsAction="never">
+        <menu>
+
+            <item android:id="@+id/lang_item"
+                android:title="@string/French"
+                app:showAsAction="never"/>
+
+        </menu>
+
+    </item>
+
+    <item android:id="@+id/average"
+        android:title="@string/Average"
+        app:showAsAction="never"/>
+
+</menu>

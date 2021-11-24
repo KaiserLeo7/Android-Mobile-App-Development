@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Midterm_MinhHuyNguyen</string>
+
+    <string name="dialog_btnSave">SAVE</string>
+
+    <string name="dialog_car_model">Enter the car model</string>
+    <string name="dialog_car_year">Enter the car year</string>
+
+</resources>

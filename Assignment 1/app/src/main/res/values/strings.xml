@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Assignment 1</string>
+    <string name="Yoda">Yoda is a Blue Smirf</string>
+    <string name="Vader">Darth Vader is Lukes father</string>
+    <string name="Sith">Sith have Yellow lightsabers</string>
+    <string name="Wookie">Chewbacca is a Wookie</string>
+    <string name="HanSolo">Han Solo shot first</string>
+    <string name="Leia">Leia and Luke are relatives</string>
+    <string name="Lang">Language</string>
+    <string name="English">English</string>
+    <string name="French">French</string>
+    <string name="Average">Average</string>
+</resources>

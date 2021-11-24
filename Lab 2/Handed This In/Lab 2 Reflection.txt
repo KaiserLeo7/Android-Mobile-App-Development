@@ -1,0 +1,33 @@
+Lab 2 gave me trouble because of my own stupidity, and only after taking a second look at everything that was
+involved in the error I finally noticed my bug, a simple mistake made by using autofill blindly.
+
+I started the Lab by following the requirements, Set up 1 Relative Layout, and then added 3 Linear Layouts inside 
+it. After giving each and ID, I used the "android:layout_below" to make each layout below the previous.
+Then back to adding widgets and the like as the lab required.
+
+I settled on the idea of ordering a burger from McDonalds, selecting a burger from a spinner that used a string array
+as the list, adding toppings with the checkboxes that had an if statement checking if any were checked, and finally
+adding a seekBar linked to a TextView that updated the text in increments of 5 for 3 max.
+
+The app displays the Burger selected, the toppings added (if any were), and leaves a message about how much you
+are tipping if the amount is above 0%
+
+The hardest part other then debugging was setting up an Alert since it was required of us, but there was no guidance
+on how to do so. I am very pleased with the help I was able to get from YouTube. Additionally I entered a Toast that
+Thanked the customer after the order was complete.
+
+Learned a lot about the back end of setOnClickListeners,  findViewById, and ArrayAdapters.
+Also had a long fight with Inner Class variables and how they could not interact with variables from outside the class
+turned out I just had to make them global, then everything went smoooth.
+
+I feel like I could have used the Logcat sooner to debug faster, and trying to jump into coding with limited knowledge of nested
+listeners or if that was even possible... such as the press of a button listener then checking the that the other listeners were 
+acted on.
+
+In the end I made a beautiful and simple app that I'm genuinly proud of.
+If I had more time and was doing this beyong the expectations of the lab I would tighten up the functions and add code that prevented
+repeats, but it's not a requirement, and I have wasted a ton of time getting it to this stage, and even going beyong the expectations of
+the lab with the seekBar being linked to a text view and used in such a way. 
+
+
+https://appetize.io/app/k568u18c3hn2bj8ge0b19b8ytr

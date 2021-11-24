@@ -1,0 +1,9 @@
+To implement this app I started by making a title TextView, matching its width to its parent, and height to 70dp.
+I changed the background color to black and added text that is size 40dp "Lab 1" in green color at the center using gravity.
+Next I learned about layout_weight and implemented a LinearLayout that included 2 EditTexts, one for username and one for password.
+I changed their color, added the ability to hide text using inputType:"textPassword" and spaced them apart by adding a marginEnd of 30dp.
+The rest of the add was simply a copy and paste away, changing the EditText to TextView so data can not be entered, then changing their
+background color, and text color as I entered the names of the 4 colleges.
+
+I went ahead and transfered all the text to the strings.xml and then made a second pass adding all the colors to the colors.xml
+Tested the application on my phone and everything was running smoothly.

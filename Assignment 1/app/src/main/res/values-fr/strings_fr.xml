@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Affectation 1</string>
+    <string name="Yoda">Yoda est un Smirf bleu</string>
+    <string name="Vader">Dark Vador est le père de Lukes</string>
+    <string name="Sith">Les Sith ont des sabres laser jaunes</string>
+    <string name="Wookie">Chewbacca est un Wookie</string>
+    <string name="HanSolo">Han Solo a tiré en premier</string>
+    <string name="Leia">Leia et Luke sont des parents</string>
+    <string name="Lang">Langue</string>
+    <string name="English">Anglaise</string>
+    <string name="French">Française</string>
+    <string name="Average">Moyenne</string>
+</resources>

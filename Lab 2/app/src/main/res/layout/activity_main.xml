@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDE50F"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/FirstLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Andriy Ostapovych"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mcdonalds"
+            android:layout_marginTop="-15dp"
+            android:layout_below="@+id/Name">
+        </ImageView>
+
+        <Spinner
+            android:id="@+id/Burgers"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/Image"
+            android:layout_gravity="center"
+            android:background="#FF0909">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/SecondLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/FirstLayout">
+
+        <CheckBox
+            android:id="@+id/Cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Add Cheese    "
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple">
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/Tomato"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Add Tomato    "
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple">>
+        </CheckBox>
+
+        <CheckBox
+            android:id="@+id/Sauce"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Extra Sauce    "
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:button="@null"
+            android:drawableRight="?android:attr/listChoiceIndicatorMultiple">
+        </CheckBox>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ThirdLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/SecondLayout">
+
+        <TextView
+            android:id="@+id/TipText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="40dp"
+            android:text="Leave a Tip?"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/TipPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="100dp"
+            android:layout_marginTop="-40dp"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:text="0%">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/SeekBarTip"
+            android:layout_width="275dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:max="3"
+            android:progress="0">
+        </SeekBar>
+
+        <Button
+            android:id="@+id/Order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:layout_gravity="center"
+            android:text="Order"
+            android:textColor="#000000"
+            android:textSize="18sp">
+        </Button>
+    </LinearLayout>
+
+</RelativeLayout>
